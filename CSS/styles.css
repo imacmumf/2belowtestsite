@@ -24,6 +24,7 @@ p {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -44,62 +45,88 @@ p {
 .logo {
   margin-top: 7rem;
   width: 60%;
-  height:150%;
+  height: 150%;
 }
 
 /* Navbar */
 
 .navbar {
-    transition: all 0.4s;
+  transition: all 0.4s;
 
 }
 
 .navbar .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
+  animation-name: nav-link-fade;
+  animation-duration: 0.4s;
+}
+
+@keyframes nav-link-fade {
+  0% {
+    font-size: inherit;
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    font-size: 1.2rem;
+    transform: rotate(10deg);
+  }
+
+  100% {
+    font-size: inherit;
+    transform: rotate(5deg);
+
+  }
 }
 
 .navbar .navbar-brand {
-    color: #fff;
+  color: #fff;
 }
 
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #fff;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 
 }
 
 .navbar.active .nav-link {
-    color: #555;
+  color: #555;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
-    text-decoration: none;
+  color: #555;
+  text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+  color: #555;
 }
 
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
+  .navbar {
+    background: #fff;
+  }
 
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
-    }
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
+
+  /* .intro {
+      
+    } */
+
 }
 
 .navbar-brand {
@@ -142,8 +169,13 @@ p {
   transform-origin: 0 0;
 }
 
-.ml1 .line1 { top: 0; }
-.ml1 .line2 { bottom: 0; }
+.ml1 .line1 {
+  top: 0;
+}
+
+.ml1 .line2 {
+  bottom: 0;
+}
 
 /* Spotify*/
 .spotify-profile {
@@ -153,6 +185,7 @@ p {
 .spotify-playlist {
   border-radius: 7%;
 }
+
 /* button sounds */
 
 .set {
