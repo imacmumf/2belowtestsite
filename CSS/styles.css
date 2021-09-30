@@ -62,7 +62,27 @@ p {
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
+  animation-name: nav-link-fade;
+  animation-duration: 0.4s;
+}
+
+@keyframes nav-link-fade {
+  0% {
+    font-size: inherit;
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    font-size: 1.2rem;
+    transform: rotate(10deg);
+  }
+
+  100% {
+    font-size: inherit;
+    transform: rotate(5deg);
+
+  }
 }
 
 .navbar .navbar-brand {
@@ -102,6 +122,11 @@ p {
   .navbar .nav-link {
     color: #555;
   }
+
+  /* .intro {
+      
+    } */
+
 }
 
 .navbar-brand {
@@ -152,12 +177,15 @@ p {
   bottom: 0;
 }
 
+.ml1 .line2 {
+  bottom: 0;
+}
+
 /* Spotify*/
 .spotify {
   height: 20rem;
   box-shadow: 7px 10px 10px 2px #ebedf2;
 }
-
 
 /* button sounds */
 
