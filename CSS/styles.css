@@ -178,6 +178,11 @@ p {
 }
 
 /* Spotify*/
+
+.spotify {
+  height: 20rem;
+}
+
 .spotify-profile {
   border-radius: 7%;
 }
@@ -254,4 +259,26 @@ p {
   background-color: #171717;
   color: #fff;
   padding: 10%;
+}
+
+
+.navIcon{
+  animation-name: threeD;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes threeD {
+  0%{
+    transform: rotate3d(0);
+  }
+  25%{
+    transform: rotate3d(2, -1, -1, -0.6turn);
+  }
+  50%{
+    transform: rotate3d(4, -1, -1, 0.2turn);
+  }
+  50%{
+    transform: rotate3d(2, -1, -1, 0.2turn);
+  }
 }
