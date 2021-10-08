@@ -275,16 +275,11 @@ iframe {
 }
 
 @keyframes threeD {
-  0%{
+  from{
     transform: rotate3d(0);
   }
-  25%{
-    transform: rotate3d(2, -1, -1, -0.6turn);
-  }
-  50%{
-    transform: rotate3d(4, -1, -1, 0.2turn);
-  }
-  50%{
-    transform: rotate3d(2, -1, -1, 0.2turn);
+  to{
+    transform: rotate3d(1, 1, 1, 360deg);
   }
 }
+
